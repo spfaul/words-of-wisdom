@@ -1,0 +1,29 @@
+.clickableLink {
+	color:  #D9B429;
+	-webkit-animation: onLinkUnhover .2s 1 forwards;
+	animation: onLinkUnhover .2s 1 forwards;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+
+}
+
+.clickableLink:hover {
+	-webkit-animation: onLinkHover .2s 1 forwards;
+	animation: onLinkHover .2s 1 forwards;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+
+@keyframes onLinkHover {
+	to {color: #FFE78D}
+}
+
+@keyframes onLinkUnhover {
+	to {color: #D9B429}
+}
+

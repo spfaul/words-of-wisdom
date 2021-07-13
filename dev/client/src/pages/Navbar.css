@@ -1,0 +1,9 @@
+.navLinks {
+  padding-top: 20px;
+  width: 100%;
+  background-color: #310B0B;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
