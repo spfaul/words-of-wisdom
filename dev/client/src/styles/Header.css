@@ -1,0 +1,47 @@
+.myHeader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: calc(10px + 2vmin);
+  color: white;
+
+  /*-webkit-animation: sayingEffect;*/
+  /*-moz-animation: sayingEffect;*/
+  animation: sayingEffect;
+  
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+
+  animation-fill-mode: forwards;
+
+  /*-webkit-animation-delay:  0s;*/
+  /*-moz-animation-delay:  0s;*/
+  /*animation-delay:  0s;*/
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  
+  word-wrap: break-word;
+}
+
+@-webkit-keyframes sayingEffect {
+  0% {opacity: 0}
+  50% {opacity:  1}
+  100% {opacity: 0}
+}
+
+@-moz-keyframes sayingEffect {
+  0% {opacity: 0}
+  50% {opacity:  1}
+  100% {opacity: 0}
+}
+
+@keyframes sayingEffect {
+  0% {opacity: 0}
+  50% {opacity:  1}
+  100% {opacity: 0}
+}

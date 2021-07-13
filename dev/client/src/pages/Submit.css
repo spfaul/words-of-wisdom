@@ -1,0 +1,17 @@
+.submit-container {
+	background-color: #310B0B;
+	min-height: 100vh;
+	padding-top: 100px;
+
+	animation: fadeIn 1s 1;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+@keyframes fadeIn {
+	from {opacity: 0%}
+	to {opacity:  100%}
+}
