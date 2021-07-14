@@ -1,6 +1,6 @@
 .submit-container {
 	background-color: #310B0B;
-	min-height: 100vh;
+	height: 100vh;
 	padding-top: 100px;
 
 	animation: fadeIn 1s 1;

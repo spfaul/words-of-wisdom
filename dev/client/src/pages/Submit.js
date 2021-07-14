@@ -34,7 +34,7 @@ function Submit() {
 
 	return (
 		<div style={{backgroundColor: "#310B0B"}}>
-			<div className="submit-container">
+			<div className="submit-container fill-content">
 				<h2>Submit your own quote!</h2>
 
 				<TextInput
