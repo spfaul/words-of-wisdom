@@ -1,11 +1,15 @@
-.about-container {
-	min-height: 100vh;
+.about-wrapper > * {
+	animation: fadeIn 1s 1;
+}
+
+.about-wrapper {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	height: 100vh;
 
-	animation: fadeIn 1s 1;
+	background-color: #310B0B;
 }
 
 @keyframes fadeIn {

@@ -53,7 +53,7 @@ function Home() {
   }, [textInfo]);
 
   return (
-    <div className="Home fill-content">
+    <div className="Home">
 
       <div style={{whiteSpace: "pre-wrap"}}>
         {(hasText) ? allHeaders : ''}

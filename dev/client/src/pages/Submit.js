@@ -33,43 +33,41 @@ function Submit() {
 	};
 
 	return (
-		<div style={{backgroundColor: "#310B0B"}}>
-			<div className="submit-container fill-content">
-				<h2>Submit your own quote!</h2>
+		<div className="submit-container fill-content">
+			<h2>Submit your own quote!</h2>
 
-				<TextInput
-					placeholder='Enter Author Name Here'
-					style={styles['submit-input-wise']}
-					maxLength={20}
-					onChangeText={(text)=>setAuthorLetterCount([text, text.length])}
-				/>
-				<h4 style={{'marginLeft':'auto', 'marginRight':'20%'}}>{authorLetterCount[1]}/20</h4>
-
-
-				<TextInput
-					placeholder='Enter Title Here'
-					style={styles['submit-input-wise']}
-					maxLength={20}
-					onChangeText={(text)=>setTitleLetterCount([text, text.length])}
-				/>
-				<h4 style={{'marginLeft':'auto', 'marginRight':'20%'}}>{titleLetterCount[1]}/20</h4>
-
-				<TextInput
-					placeholder='Enter Wise Words Here, Each Separated With a "\"'
-					style={styles['submit-input-wise']}
-					multiline={true}
-					numberOfLines={7}
-					maxLength={300}
-					onChangeText={(text)=>setWiseLetterCount([text, text.length])}
-				/>
-				<h4 style={{'marginLeft':'auto', 'marginRight':'20%'}}>{wiseLetterCount[1]}/300</h4>
+			<TextInput
+				placeholder='Enter Author Name Here'
+				style={styles['submit-input-wise']}
+				maxLength={20}
+				onChangeText={(text)=>setAuthorLetterCount([text, text.length])}
+			/>
+			<h4 style={{'marginLeft':'auto', 'marginRight':'20%'}}>{authorLetterCount[1]}/20</h4>
 
 
-				<Button
-					variant='outline-info end-screen end-submit'
-					onClick={submitQuoteToAPI}
-				>Submit</Button>
-			</div>
+			<TextInput
+				placeholder='Enter Title Here'
+				style={styles['submit-input-wise']}
+				maxLength={20}
+				onChangeText={(text)=>setTitleLetterCount([text, text.length])}
+			/>
+			<h4 style={{'marginLeft':'auto', 'marginRight':'20%'}}>{titleLetterCount[1]}/20</h4>
+
+			<TextInput
+				placeholder='Enter Wise Words Here, Each Separated With a "\"'
+				style={styles['submit-input-wise']}
+				multiline={true}
+				numberOfLines={7}
+				maxLength={300}
+				onChangeText={(text)=>setWiseLetterCount([text, text.length])}
+			/>
+			<h4 style={{'marginLeft':'auto', 'marginRight':'20%'}}>{wiseLetterCount[1]}/300</h4>
+
+
+			<Button
+				variant='outline-info end-screen end-submit'
+				onClick={submitQuoteToAPI}
+			>Submit</Button>
 		</div>
 	);
 }
