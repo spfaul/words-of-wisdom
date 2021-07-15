@@ -8,6 +8,8 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(cors());
 
+
+
 function loadJson(path) {
   return JSON.parse(fs.readFileSync(path));
 }
@@ -19,9 +21,13 @@ function saveJson(path, data) {
   fs.writeFile(path, data, callback);
 }
 
+
+
 var DB = loadJson('src/data.json')
 
 app.use('/', express.static('./client/build'));
+
+
 
 app.get('/api/getWords', (req, res) => {
   DB = loadJson('src/data.json')

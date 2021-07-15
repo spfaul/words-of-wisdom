@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node src/App.js"
+    "dev": "node src/App.js",
+    "build": "assemble"
   },
   "keywords": [],
   "author": "",
@@ -14,7 +15,11 @@
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "harp": "^0.41.0",
     "nodemon": "^2.0.10",
     "serve": "^12.0.0"
+  },
+  "devDependencies": {
+    "assemble": "^0.24.3"
   }
 }
