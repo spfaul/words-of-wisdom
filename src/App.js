@@ -25,7 +25,8 @@ function saveJson(path, data) {
 
 var DB = loadJson('src/data.json')
 
-app.use('/', express.static('./client/build'));
+const buildPath = path.join(__dirname, '..', 'client/build')
+app.use('/', express.static(buildPath));
 
 
 
