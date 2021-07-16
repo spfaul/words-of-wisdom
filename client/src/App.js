@@ -9,7 +9,6 @@ import About from './pages/About';
 import Navbar from './pages/Navbar';
 import Submit from './pages/Submit';
 
-
 function App() {
 
   return (

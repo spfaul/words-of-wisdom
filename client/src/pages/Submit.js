@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { TextInput, StyleSheet } from 'react-native';
 import Button from 'react-bootstrap/Button';
 import axios from 'axios';
+import { BASEURL } from '../consts';
 
 import './Submit.css';
 
@@ -23,13 +24,13 @@ function Submit() {
 	});
 
 	const submitQuoteToAPI = async () => {
-		await axios.post('/api/queueWords',
+		await axios.post(`${BASEURL}/api/queueWords`,
 			{
 				words: wiseLetterCount[0],
 				author: authorLetterCount[0],
 				title: titleLetterCount[0]
-			})
-		alert('Submission Successful!')
+			});
+		alert('Submission Successful!');
 	};
 
 	return (

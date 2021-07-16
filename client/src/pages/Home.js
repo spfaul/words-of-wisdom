@@ -1,6 +1,8 @@
-import './Home.css';
 import React, {useState, useEffect} from 'react';
 import axios from "axios";
+import { BASEURL } from '../consts.js';
+
+import './Home.css';
 
 
 import Header from '../components/Header';
@@ -13,7 +15,7 @@ function Home() {
 
   const getWiseWords = async () => {
     // fetching from api here
-    await axios.get('/api/getWords')
+    await axios.get(`${BASEURL}/api/getWords`)
       .then((res)=>{
         let {wiseWords, author, title} = res['data']
         // console.log(res['data'])
