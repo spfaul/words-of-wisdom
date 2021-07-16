@@ -13,7 +13,7 @@ function Home() {
 
   const getWiseWords = async () => {
     // fetching from api here
-    await axios.get('http://localhost:3001/api/getWords')
+    await axios.get('/api/getWords')
       .then((res)=>{
         let {wiseWords, author, title} = res['data']
         // console.log(res['data'])
