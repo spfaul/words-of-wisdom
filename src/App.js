@@ -2,11 +2,15 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const fs = require('fs');
+const path = require('path');
+
 require('dotenv').config();
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(cors());
+
+
 
 function loadJson(path) {
   return JSON.parse(fs.readFileSync(path));
@@ -19,9 +23,14 @@ function saveJson(path, data) {
   fs.writeFile(path, data, callback);
 }
 
+
+
 var DB = loadJson('src/data.json')
 
-app.use('/', express.static('./client/build'));
+const buildPath = path.join(__dirname, '..', 'client/build')
+app.use('/', express.static(buildPath));
+
+
 
 app.get('/api/getWords', (req, res) => {
   DB = loadJson('src/data.json')

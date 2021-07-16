@@ -23,7 +23,7 @@ function Submit() {
 	});
 
 	const submitQuoteToAPI = async () => {
-		await axios.post('http://localhost:3001/api/queueWords',
+		await axios.post('/api/queueWords',
 			{
 				words: wiseLetterCount[0],
 				author: authorLetterCount[0],
